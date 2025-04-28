@@ -17,10 +17,23 @@ make
 
 
 Smaple Professsional Team work
-----git clone https://github.com/username/repo-name.git
-cd repo-name
-git checkout -b feature/my-feature-name
-# (make your changes)
+# Clone first time
+git clone https://github.com/JohnDoe/student-management.git
+cd student-management
+
+# Create new branch
+git checkout -b feature/add-search-function
+
+# Pull latest changes frequently
+git pull origin main
+
+# Make code changes
 git add .
-git commit -m "Short clear message about your changes"
-git push -u origin feature/my-feature-name
+git commit -m "Added search by name feature"
+
+# Final pull before pushing (safest)
+git pull origin main
+
+# Push your branch
+git push -u origin feature/add-search-function
+
